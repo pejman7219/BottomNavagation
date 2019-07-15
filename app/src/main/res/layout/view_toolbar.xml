@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar_parent">
+
+    <TextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imgLogo"
+        android:layout_toRightOf="@+id/txtAddAdvertisement"
+        android:ellipsize="marquee"
+        android:gravity="right|center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowRadius="1.0"
+        android:singleLine="true"
+        android:textColor="#ddffffff"
+        android:textSize="16.0dp" />
+
+    <TextView
+        android:id="@+id/txtAddAdvertisement"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/txtToolbarTitle"
+
+        android:clickable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowRadius="1.0"
+        android:textColor="#ccffffff"
+        android:textSize="12.0dp"/>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1.0dp"
+        android:layout_marginRight="1.0dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_home2"
+        android:visibility="visible"/>
+
+</RelativeLayout>
